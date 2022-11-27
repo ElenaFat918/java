@@ -1,0 +1,12 @@
+нояб. 27, 2022 6:41:26 PM Seminar2WriteFoldersArrayBackTryCatch getFiles
+WARNING: Файлы не найдены в этой папке
+нояб. 27, 2022 6:41:26 PM Seminar2WriteFoldersArrayBackTryCatch writer
+INFO: В предыдущем методе файл вернул null
+нояб. 27, 2022 7:40:05 PM Seminar2WriteFoldersArrayBackTryCatch getFiles
+WARNING: Файлы не найдены в этой папке
+нояб. 27, 2022 7:40:06 PM Seminar2WriteFoldersArrayBackTryCatch writer
+INFO: В предыдущем методе файл вернул null
+нояб. 27, 2022 7:41:09 PM Seminar2WriteFoldersArrayBackTryCatch getFiles
+WARNING: Файлы не найдены в этой папке
+нояб. 27, 2022 7:41:09 PM Seminar2WriteFoldersArrayBackTryCatch writer
+INFO: В предыдущем методе файл вернул null

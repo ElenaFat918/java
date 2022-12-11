@@ -7,7 +7,7 @@ public class TaskTwo {
     ArrayList<String> uniquePlanets = new ArrayList<>();
 
     public void addPlanets(){
-        planets.add("Меркурий");
+        planets.add("Меркурий"); // на i-й индекс добавляет элемент
         planets.add("Земля");
         planets.add("Земля");
         planets.add("Плутон");
@@ -20,11 +20,16 @@ public class TaskTwo {
         planets.add("Сатурн");
         planets.add("Нептун");
         planets.add("Земля");
-
+        
+        // for (String planet : planets){ // Оператор foreach, вправой название
+        //     // коллекции planets, по кторой бегает , в лев тип элементов, 
+        //     //в переменную planet копируем каждый элемент коллекции
+        //     System.out.println(planet);
+        // }
         for (int i=0; i<planets.size(); i++) {
             for (int j=0; j<planets.size(); j++) {
                 if (i!=j && !planets.get(i).equals(planets.get(j))
-                        && !uniquePlanets.contains(planets.get(i))) {
+                        && !uniquePlanets.contains(planets.get(i))) {   //метод contains проверяет входит ли проверяемый элемент в состав нашей коллекции
                     count = Collections.frequency(planets, planets.get(i));
                     System.out.println(planets.get(i) + " " + count);
                     uniquePlanets.add(planets.get(i));

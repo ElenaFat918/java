@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-12-11T20:50:43.331520300Z</date>
+  <millis>1670791843331</millis>
+  <nanos>520300</nanos>
+  <sequence>0</sequence>
+  <logger>Lesson_02.Ex005_Logger</logger>
+  <level>WARNING</level>
+  <class>Lesson_02.Ex005_Logger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 1</message>
+</record>
+<record>
+  <date>2022-12-11T20:50:43.403564300Z</date>
+  <millis>1670791843403</millis>
+  <nanos>564300</nanos>
+  <sequence>1</sequence>
+  <logger>Lesson_02.Ex005_Logger</logger>
+  <level>INFO</level>
+  <class>Lesson_02.Ex005_Logger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 2</message>
+</record>
+</log>

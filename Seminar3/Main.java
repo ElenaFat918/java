@@ -36,16 +36,16 @@ public class Main {
            }
        }
 
-       TaskOne taskOne = new TaskOne();
-       taskOne.randomNumberList();
+    //    TaskOne taskOne = new TaskOne();
+    //    taskOne.randomNumberList();
 
-       TaskTwo taskTwo = new TaskTwo();
-       taskTwo.addPlanets();
+    //    TaskTwo taskTwo = new TaskTwo();
+    //    taskTwo.addPlanets();
 
     //    TaskThree taskThree = new TaskThree();
     //    taskThree.addPlanets();
 
-    //     TaskFourth taskFourth = new TaskFourth();
-    //     taskFourth.work();
+        TaskFourth taskFourth = new TaskFourth();
+        taskFourth.work();
     }
 }

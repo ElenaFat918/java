@@ -23,9 +23,10 @@ public class TaskThree {
 
         // Для работы и модификации с коллекцией Iterator, тип должен совпадать с коллекцией (просо каретка, у нее есть методы, next передвигает кретку и возвращает элемент)
         Iterator<String> iterator = planets.iterator();
-        while (iterator.hasNext()) {                                //пока hasNext передвигает каретку на один элемент, 
+        while (iterator.hasNext()) {                                //пока hasNext передвигает каретку на один элемент, указывает есть след элемент или нет
             if (Collections.frequency(planets, iterator.next())>1){ //если количество вхождений элемента в iterator.next() в коллекции planets больше одного
-                count++;           // увеличиваем переменную на 1                               //
+            //if (Collections.frequency(planets, next())>1){    //тоже, но проще
+                    count++;           // увеличиваем переменную на 1                               //
                 iterator.remove(); //удаляет именно этот элемент
             }
         }

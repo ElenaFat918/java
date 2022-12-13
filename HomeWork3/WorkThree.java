@@ -46,16 +46,16 @@ public class WorkThree {
         } else {
             int medium = list.get(list.size() / 2);
             System.out.println("В списке из " + list.size() + " элементов среднее число : " + medium);
-       
-                            // // Iterator<Integer> iterator = list.iterator();
-                            // while (iterator.hasNext()) {
-                            //      for (int i = 0; i<list.size(); i++){
-                            //         for (int j = 0; j<list.size(); j++){
-                            //     Float prctng=((i - j)/i )*100;
-                            //     }
-                            // }
 
-                            //     System.out.println("Cреднее число из этого списка " + average);
+            // // Iterator<Integer> iterator = list.iterator();
+            // while (iterator.hasNext()) {
+            // for (int i = 0; i<list.size(); i++){
+            // for (int j = 0; j<list.size(); j++){
+            // Float prctng=((i - j)/i )*100;
+            // }
+            // }
+
+            // System.out.println("Cреднее число из этого списка " + average);
         }
 
         // System.out.println("Максимальное число из этого списка" +
@@ -67,5 +67,5 @@ public class WorkThree {
 }
 /*
  * Задан целочисленный список ArrayList. Найти минимальное, максимальное и
- * среднее из этого списка.
+ * среднее из этого списка .
  */

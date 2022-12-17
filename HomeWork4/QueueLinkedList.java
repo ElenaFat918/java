@@ -99,7 +99,6 @@ public class QueueLinkedList {
         i = in.nextInt();
         linkedList.add(i);
         in.close();
-
         System.out.println("Помещаю " + i + " "  + "в конец очереди : " + linkedList); 
     }
     
@@ -108,6 +107,7 @@ public class QueueLinkedList {
         System.out.println("Извлекаю и удаляю первый элемент " + linkedList.removeFirst());
         System.out.println("Получилась очередь: " + linkedList);
     }
+    
     public static void first(LinkedList<Integer> linkedList) {  // возвращает первый элемент из очереди, не удаляя
         System.out.println("Извлекаю и НЕ удаляю первый элемент " + linkedList.getFirst()); 
         System.out.println("И очередь та же : " + linkedList);

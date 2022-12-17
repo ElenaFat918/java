@@ -1,6 +1,7 @@
 package HomeWork4;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
@@ -28,15 +29,23 @@ public class ReverseLinkedList {
         System.out.println("Передали массив в LinkedList = " + linkedList);
     }
     
-    public LinkedList<Integer> reverseLinkedList(LinkedList<Integer> linkedList) {
+    // public LinkedList<Integer> reverseLinkedList(LinkedList<Integer> linkedList) {
 
-        LinkedList<Integer> reverseLinkedList = new LinkedList<>();
+    //     LinkedList<Integer> reverseLinkedList = new LinkedList<>();
 
-        for (int i = linkedList.size() - 1; i >= 0; i--) {
-            reverseLinkedList.add(linkedList.get(i));
-        }
-        System.out.println("Перевернутый список " + reverseLinkedList);
-        return reverseLinkedList;
+    //     for (int i = linkedList.size() - 1; i >= 0; i--) {
+    //         reverseLinkedList.add(linkedList.get(i));
+    //     }
+    //     System.out.println("Перевернутый список " + reverseLinkedList);
+    //     return reverseLinkedList;
+    // }
+    public void reverseLinkedList(LinkedList<Integer> linkedList) {
+        
+        for (int i = 0; i < linkedList.size(); i++) {
+            Collections.reverse(linkedList);
+                 }
+        System.out.println("Перевернутый список: " + linkedList);
+
     }
 }
 /*

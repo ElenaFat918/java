@@ -2,10 +2,10 @@ package Seminar6;
 import java.util.HashSet;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // public - модификатор доступа
     //    TaskOne taskOne = new TaskOne();
 
-    //    taskOne.fillSet(taskOne.hashSet);
+    //    taskOne.fillSet(taskOne.hashSet);// обращение к переменной класса по имени класса
     //    taskOne.fillSet(taskOne.linkedHashSet);
     //    taskOne.fillSet(taskOne.treeSet);
 
@@ -14,14 +14,14 @@ public class Main {
     //    taskOne.sout(taskOne.treeSet);
 
     //    TaskTwo taskTwo = new TaskTwo();
-    //    System.out.println(taskTwo.percentOfUnique(taskTwo.array));
+    //    System.out.println(taskTwo.percentOfUnique(taskTwo.array)); //вложенность 
 
-        Cat cat = new Cat(1,4, "Дворняжка");
-        cat.setName("Васька");
+        Cat cat = new Cat(1,4, "Дворняжка"); //cat объект который создается по шаблону класса
+        cat.setName("Васька"); // изменяем имя кошки
         Cat anotherCat = new Cat(1,4,"Дворняжка");
         anotherCat.setName("Васька");
 
-        HashSet<Cat> catsSet = new HashSet<>();
+        HashSet<Cat> catsSet = new HashSet<>(); // параметризовали catsSet HashSet Cat-ом(только объекты класса Cat)
         catsSet.add(cat);
         catsSet.add(anotherCat);
         System.out.println(catsSet);

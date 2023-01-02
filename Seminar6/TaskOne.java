@@ -6,12 +6,18 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class TaskOne {
-    HashSet<Integer> hashSet = new HashSet<>();
+    HashSet<Integer> hashSet = new HashSet<>();//испольузем этот сет для быстродействия, создали hashSet который проинтеризовали Integer, чтобы другие разработчики не смогли изменить hashSet
     LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>();
-    TreeSet<Integer> treeSet = new TreeSet<>();
+    TreeSet<Integer> treeSet = new TreeSet<>(); //испольузем этот сет для сортировки
 
-    public void fillSet(Set<Integer> set){
-        set.add(5);
+/*в HashSet есть все методы из класса Set + свои(механизм позднего 
+связывания позволяет вести себя с этим объектом set как с объектом класса родителя, 
+так и при этом поддтягивать реализацию класса наследника). В основе лежит Hash-функция. 
+Сохраняеет неестеств порядок.
+*/
+    public void fillSet(Set<Integer> set){ 
+        // абстрактный Set<Integer> метод по заполнению set, испоьзуем Set чтобы в мейне использаовать treeSet
+        set.add(5); 
         set.add(1);
         set.add(2);
         set.add(3);
@@ -21,7 +27,8 @@ public class TaskOne {
         set.add(3);
     }
 
-    public void sout(Set<Integer> set){
+    public void sout(Set<Integer> set){ /*метод по получению инфо об имени класса коллекции. 
+        set - имя переменной в метод передаём*/
         System.out.println(set.getClass() + " " + set);
     }
 }

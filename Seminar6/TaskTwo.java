@@ -4,22 +4,22 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class TaskTwo {
-    int[] array = new int[1000];
+    int[] array = new int[1000]; //создали и проинициализировали маасив размером 1000 элементов
 
     private void fillArray(){
         Random random = new Random();
         for (int i=0; i< array.length; i++) {
-            array[i] = random.nextInt(25);
+            array[i] = random.nextInt(25); //заполняем массив числами от 0 до 24 
         }
     }
 
-    public float percentOfUnique(int[] array) {
-        fillArray();
-        HashSet<Integer> set = new HashSet<>();
+    public float percentOfUnique(int[] array) { //метод принимает массив
+        fillArray();// заполняем входящий массив array
+        HashSet<Integer> set = new HashSet<>(); //проинициализируем HashSet в методе в кот он испол-ся
         for (int i=0; i< array.length; i++) {
-            set.add(array[i]);
+            set.add(array[i]); //заполнилили HashSet
         }
-        return (float) set.size() * 100 / array.length;
+        return (float) set.size() * 100 / array.length; // вернули процент уникальных значений в данном массиве
     }
 }
 

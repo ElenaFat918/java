@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 public class ThirdProblem  {
     public void sortedMap(String input) {
-        TreeMap<Integer, ArrayList<String>> treeMap = new TreeMap<>();  // TreeMap <ключ Integer, значение ArrayList<String>>
+        TreeMap<Integer, ArrayList<String>> treeMap = new TreeMap<>();  // M<ключ Integer, значение ArrayList<String>>
         String[] s = input.split(" ");  // разбиваем строку по пробелам в массив 
         for (int i = 0; i<s.length; i++) {      //в массиве проверяем:
             if (treeMap.containsKey(s[i].length())) {   //если treeMap содержит длину, указанную в s[i]

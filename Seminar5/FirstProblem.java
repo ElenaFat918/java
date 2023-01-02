@@ -17,8 +17,11 @@ public class FirstProblem {
 
     public void getPassportInfoByName(Map<Integer, String> passports, String name){
         for(Map.Entry<Integer, String> passportsEntry : passports.entrySet()) {
+            // System.out.println(passportsEntry.getValue() + "   " + name);
             if (passportsEntry.getValue().equals(name)) {
+
                 System.out.println(passportsEntry.getKey());
+                // System.out.println("найдено совпадение");
             }
         }
     }

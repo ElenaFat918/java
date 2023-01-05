@@ -3,29 +3,33 @@ package OOPlesson01.Ex006;
 import java.util.Random;
 
 public class BaseHero {
-    protected static int number;
+    protected static int number; //protected - будет доступно в рамках текущего класса и в классах-наследниках
     protected static Random r;
 
     protected String name;
     protected int hp;
     protected int maxHp;
-
+    /** инициализатор статич полей */
     static {
         BaseHero.number = 0;
         BaseHero.r = new Random();
     }
- 
+    /**
+     * конструктор отвечает за инициализацию имени и максим кол-ва здоровья
+     * @param name
+     * @param hp
+     */
     public BaseHero(String name, int hp) {
         this.name = name;
         this.hp = hp;
         this.maxHp = hp;
     }
-
+    /**конструктор по умолчанию */
     public BaseHero() {
         this(String.format("Hero_Priest #%d", ++BaseHero.number),
         BaseHero.r.nextInt(100, 200));
     }
-
+    /** Метод получ инфы без каких-то деталей(мана, эликсир - в тип)*/
     public String getInfo() {
         return String.format("Name: %s  Hp: %d  Type: %s",
                 this.name, this.hp, this.getClass().getSimpleName());

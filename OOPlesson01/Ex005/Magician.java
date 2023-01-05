@@ -31,23 +31,35 @@ public class Magician {
                 Magician.r.nextInt(100, 200),
                 Magician.r.nextInt(50, 150));
     }
-
+    /** Метод атаки
+     * 
+     * @param damage
+     */ 
     public int Attack() {
         int damage = Magician.r.nextInt(20, 30);
         this.mana -= (int)(damage * 0.8);
         if (mana < 0) return 0;
         else return damage;
     }
-
+    /**
+     * Метод получения инфы
+     * @return
+     */
     public String getInfo() {
         return String.format("Name: %s  Hp: %d Enegry:  %d Type: %s",
                 this.name, this.hp, this.mana, this.getClass().getSimpleName());
     }
-    
+    /**
+     * Метод лечения
+     * @param Hp
+     */
     public void healed(int Hp) {
         this.hp = Hp + this.hp > this.maxHp ? this.maxHp : Hp + this.hp;
     }
-
+    /**
+     * Метод получения урона
+     * @param damage
+     */
     public void GetDamage(int damage) {
         if (this.hp - damage > 0) {
             this.hp -= damage;

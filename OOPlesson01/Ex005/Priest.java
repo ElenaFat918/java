@@ -27,29 +27,41 @@ public class Priest {
         this.elixir = elixir;
         this.maxElixir = elixir;
     }
-
-    public Priest() {
+        /**Конструктор */
+        public Priest() {
         this(String.format(HERO_PRIEST_D, ++Priest.number),
         Priest.r.nextInt(100, 200),
         Priest.r.nextInt(50, 150));
     }
-
+    /**
+     * Метод атаки
+     * @return
+     */
     public int Attack() {
         int damage = Priest.r.nextInt(20, 30);
         this.elixir -= (int)(damage * 0.8);
         if (elixir < 0) return 0;
         else return damage;
     }
-
+    /**
+     * Метод получения инфы
+     * @return
+     */
     public String getInfo() {
         return String.format("Name: %s  Hp: %d Elixir:  %d Type: %s",
                 this.name, this.hp, this.elixir, this.getClass().getSimpleName());
     }
-    
+    /**
+     * Метод лечения
+     * @param Hp
+     */
     public void healed(int Hp) {
         this.hp = Hp + this.hp > this.maxHp ? this.maxHp : Hp + this.hp;
     }
-
+    /**
+     * Метод получения урона
+     * @param damage
+     */
     public void GetDamage(int damage) {
         if (this.hp - damage > 0) {
             this.hp -= damage;

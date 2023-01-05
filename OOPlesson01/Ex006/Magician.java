@@ -1,5 +1,5 @@
 package OOPlesson01.Ex006;
-
+/**описываем мага, он должен быть наследником класса BaseHero (Magician производный от BaseHero) */
 public class Magician extends BaseHero {
 
     private int mana;
@@ -7,8 +7,8 @@ public class Magician extends BaseHero {
 
     public Magician() {
         super(String.format("Hero_Magician #%d", ++Magician.number),
-                Magician.r.nextInt(100, 200));
-        this.maxMana = Magician.r.nextInt(50, 150);
+                Magician.r.nextInt(100, 200)); //super- пойти в базовый класс ...
+        this.maxMana = Magician.r.nextInt(50, 150); // доинициализация
         this.mana = maxMana;
     }
 

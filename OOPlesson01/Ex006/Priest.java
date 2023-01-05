@@ -1,8 +1,9 @@
 package OOPlesson01.Ex006;
 
 public class Priest extends BaseHero {
+    /**описываем жреца, он должен быть наследником класса BaseHero (Magician производный от BaseHero) */
 
-    private int elixir;
+    private int elixir; //определяем свои состояния для класса Priest
     private int maxElixir;
 
     public Priest() {

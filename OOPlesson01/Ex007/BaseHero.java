@@ -41,9 +41,12 @@ public class BaseHero {
         }
         // else { die(); }
     }
-
+    /**
+     * Метод атаки
+     * @param target - переменная базового типа, цель атаки
+     */
     public void Attack(BaseHero target) {
-        int damage = BaseHero.r.nextInt(10, 20);
-        target.GetDamage(damage);
+        int damage = BaseHero.r.nextInt(10, 20);//генерирую случайное число урона
+        target.GetDamage(damage);//нашей цели target передаем в качестве аргумента методу GetDamage сгенерированный damage
     }
 }
